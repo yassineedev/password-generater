@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  width: 520px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+button {
+  background-color: #0C833E;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #075f27;
+}
+
+/* Universal box-sizing so padding/border included in width */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input.generated-output {
+  width: 100%;               /* fills the container width */
+  padding: 14px 18px;        /* comfortable padding */
+  font-size: 1.2rem;         /* readable font size */
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  background-color: #f7f9fc;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+  user-select: all;          /* easy to select text */
+  caret-color: transparent;  /* hide caret since readonly */
+  outline: none;
+  display: block;            /* prevents inline quirks */
+  margin: 0;                 /* no extra margins */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.generated-output:focus {
+  border-color: #0C833E;
+  box-shadow: 0 0 0 3px rgba(12, 131, 62, 0.4);
+  background-color: #eaf6ea;
+  caret-color: auto;         /* show caret on focus if needed */
+}
+
+input.generated-output[disabled],
+input.generated-output[readonly] {
+  background-color: #e2e8f0;
+  color: #4a5568;
+  cursor: default;
+  caret-color: transparent;
+}
+
